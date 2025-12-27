@@ -6,30 +6,33 @@ def faq_page_node(state: GraphState):
 
     faq_items = []
 
-    for q in questions[:5]:
-        if q.category == "Usage":
+    for q in questions:
+        category = q["category"]
+        question_text = q["question"]
+
+        if category == "Usage":
             answer = product.how_to_use
 
-        elif q.category == "Safety":
+        elif category in ["Safety", "Side Effects", "Sensitivity"]:
             answer = product.side_effects
 
-        elif q.category == "Informational":
+        elif category in ["Ingredients", "Informational"]:
             answer = ", ".join(product.ingredients)
 
-        elif q.category == "Purchase":
+        elif category in ["Pricing", "Value for Money"]:
             answer = product.price
 
-        elif q.category == "Comparison":
+        elif category == "Comparison":
             answer = (
                 "GlowBoost focuses on brightening with Vitamin C and Hyaluronic Acid, "
                 "while other serums may vary in formulation and price."
             )
 
         else:
-            answer = "Information not available."
+            answer = "Please refer to the product information for details."
 
         faq_items.append({
-            "question": q.question,
+            "question": question_text,
             "answer": answer
         })
 

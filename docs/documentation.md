@@ -239,23 +239,26 @@ This approach mirrors real-world applied AI systems where automation, reliabilit
 
 7. Setup & Execution Guide
 
-This section describes how to run the project locally using LangGraph Dev.
+This section describes how to run the project locally using LangGraph Dev with uv for dependency management.
 
 7.1 Prerequisites
 
-Ensure the following are installed on your system:
+Ensure the following are installed:
 
 Python 3.10+
 
-pip
-
 Git
+
+uv (Python package manager)
 
 LangGraph CLI
 
-To install LangGraph CLI:
+Install uv (if not already installed):
 
-pip install langgraph
+pip install uv
+
+
+uv is used instead of pip for faster and reproducible dependency management.
 
 7.2 Project Setup
 
@@ -265,35 +268,35 @@ git clone https://github.com/<your-username>/kasparro-ai-agentic-content-generat
 cd kasparro-ai-agentic-content-generation-system-zuhair-ahmad
 
 
-(Optional but recommended) Create and activate a virtual environment:
+Create and activate a virtual environment using uv:
 
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+uv venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 
 
 Install dependencies:
 
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 
 
-(If a requirements.txt is not provided, ensure langgraph, pydantic, and langchain-core are installed.)
+(Ensure requirements.txt includes langgraph, pydantic, and langchain-core.)
 
 7.3 Running the Agentic Pipeline
 
-The project is executed using LangGraph Dev, not a main.py script.
+The project is executed using LangGraph Dev.
 
 From the repository root, run:
 
 langgraph dev
 
 
-This will:
+This command:
 
-Load the compiled LangGraph workflow
+Loads the compiled LangGraph workflow
 
-Start a local development runner
+Initializes the agent orchestration graph
 
-Allow execution of the graph with an initial state
+Enables local execution of the pipeline
 
 7.4 Input State
 
@@ -314,9 +317,6 @@ Example input:
   }
 }
 
-
-This input is parsed and propagated through the agent graph.
-
 7.5 Output Artifacts
 
 On successful execution, the system automatically creates an outputs/ directory and generates:
@@ -327,7 +327,7 @@ outputs/
 └── comparison_page.json
 
 
-These JSON files represent the final machine-readable content pages produced by the system.
+Each file is a machine-readable JSON representation of a generated content page.
 
 7.6 Notes
 
@@ -335,6 +335,6 @@ No frontend or API server is required.
 
 No external services or credentials are needed.
 
-The system is fully deterministic and self-contained.
+The system is fully self-contained and deterministic.
 
-Re-running the graph will overwrite existing output files.
+Re-running the pipeline overwrites existing output files.

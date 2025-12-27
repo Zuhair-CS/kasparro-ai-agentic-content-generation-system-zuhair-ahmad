@@ -2,24 +2,84 @@
   "page_type": "faq",
   "items": [
     {
+      "question": "What is GlowBoost Vitamin C Serum?",
+      "answer": "Vitamin C, Hyaluronic Acid"
+    },
+    {
+      "question": "What ingredients does this product contain?",
+      "answer": "Vitamin C, Hyaluronic Acid"
+    },
+    {
       "question": "How should GlowBoost Vitamin C Serum be used?",
       "answer": "Apply 2\u20133 drops in the morning before sunscreen"
     },
     {
-      "question": "Are there any side effects?",
+      "question": "When should this serum be applied during the day?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "Which skin types is this product suitable for?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "What are the main benefits of using this serum?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "How effective is this product for brightening skin?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "Is this product safe to use on sensitive skin?",
       "answer": "Mild tingling for sensitive skin"
+    },
+    {
+      "question": "Are there any side effects associated with this product?",
+      "answer": "Mild tingling for sensitive skin"
+    },
+    {
+      "question": "Will this serum cause irritation for sensitive skin?",
+      "answer": "Mild tingling for sensitive skin"
+    },
+    {
+      "question": "How often should this serum be used?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "Can this serum be layered with other skincare products?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "How should this product be stored?",
+      "answer": "Please refer to the product information for details."
     },
     {
       "question": "What is the price of this product?",
       "answer": "\u20b9699"
     },
     {
-      "question": "What are the key ingredients?",
-      "answer": "Vitamin C, Hyaluronic Acid"
+      "question": "Is this serum good value for its price?",
+      "answer": "\u20b9699"
     },
     {
-      "question": "How does this compare to other serums?",
+      "question": "How does this serum compare to other vitamin C serums?",
       "answer": "GlowBoost focuses on brightening with Vitamin C and Hyaluronic Acid, while other serums may vary in formulation and price."
+    },
+    {
+      "question": "Is this product suitable for beginners?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "How long does it take to see results from this serum?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "Can this serum be used with sunscreen?",
+      "answer": "Please refer to the product information for details."
+    },
+    {
+      "question": "Can this serum be used daily?",
+      "answer": "Please refer to the product information for details."
     }
   ]
 }

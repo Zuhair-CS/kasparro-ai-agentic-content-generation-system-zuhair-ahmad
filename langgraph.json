@@ -1,0 +1,8 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+        "content_generation": {
+        "path": "./content_generation/langgraph_app.py:graph"
+        }
+    }
+}
